@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <RadioGroup
+        android:id="@+id/anchor_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/anchor_radio_group_bg"
+        android:orientation="horizontal"
+        android:padding="1px">
+
+        <RadioButton
+            android:id="@+id/fragment_list_radio_button_hot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="最火"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/fragment_list_radio_button_new"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="最新"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <include layout="@layout/include_isnetavilable" />
+
+    <include layout="@layout/include_loading" />
+
+
+    <com.allen.user.alpsfm.view.SwipyRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/anchor_list_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+    </com.allen.user.alpsfm.view.SwipyRefreshLayout>
+
+</LinearLayout>

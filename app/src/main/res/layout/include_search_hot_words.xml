@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_search_hot_words"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="搜索热词"
+            android:textColor="@color/search_gray"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <com.allen.user.alpsfm.view.WarpLinearLayout
+        android:id="@+id/search_hot_words_warplinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:grivate="left"
+        app:horizontal_Space="15dp"
+        app:isFull="false"
+        app:vertical_Space="10dp" />
+
+</LinearLayout>

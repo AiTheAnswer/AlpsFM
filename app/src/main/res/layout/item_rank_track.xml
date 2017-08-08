@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/item_txt_rank_track_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="1"
+        android:textSize="16sp" />
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/item_img_rank_track_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        app:border="true"
+        app:border_color="@android:color/white"
+        app:border_width="3dp" />
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/item_img_rank_track_play_state"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="22dp"
+        android:src="@mipmap/flag_player_play"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/item_img_rank_track_icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_txt_rank_track_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="3dp"
+                android:src="@mipmap/icon_by_user" />
+
+            <TextView
+                android:id="@+id/item_txt_rank_track_album_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/darker_gray" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    android:paddingBottom="0.5px"
+    android:paddingRight="0.5px">
+
+    <View
+        android:id="@+id/item_view_top_grid_classification"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/classification_grid_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_img_icon_grid_classification"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:id="@+id/item_txt_name_grid_classification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_view_bottom_grid_classification"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:visibility="gone" />
+
+</LinearLayout>
